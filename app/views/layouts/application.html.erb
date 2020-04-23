@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JusticeApp</title>
+    <title>Justice App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'%>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'%>
+    <%= render 'layouts/shim' %>
   </head>
 
   <body>
-    <%= yield %>
+  
+    <%= render 'layouts/header' %>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+    <div class="container">
+      <div id="page-container">
+        <div id="content-wrap">
+            <%= yield %>
+            <!-- all other page content -->
+        </div>
+        <%= render 'layouts/footer' %>
+      </div>
+    </div>
   </body>
+
 </html>

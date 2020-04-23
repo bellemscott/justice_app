@@ -1,0 +1,181 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+    padding-top: 60px;
+  }
+  
+  section {
+    overflow: auto;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .center h1 {
+    margin-bottom: 10px;
+  }
+
+  /* typography */
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+  }
+  
+  h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
+
+  /* header */
+  /* Modify the backgorund color */ 
+.navbar-custom { 
+    float:left;
+    padding-top:10px;
+    background-color: lightgray; 
+    border-color: white;
+    height: 5.1em;
+} 
+#menuitem{
+    font-size: 1.1em;
+    margin-right: -8px;
+    font-weight:bold;
+    color: #003478;
+    font-family: merriweather,serif;
+}
+#menuitem:hover{
+    text-decoration: underline;
+}
+
+.homeimage{
+    width:100%
+}
+.hometext{
+    color: black;
+}
+.transparent{
+    background-color: lightgray;
+}
+.bottom-left{
+    font-weight: bold;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 180px;
+    left: 20px;
+    font-family: merriweather, serif;
+    font-size: 2.1em;
+    color: white;
+}
+
+.brandeislogo{
+    float: left;
+}
+.topbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+/* Float the link section to the right */
+.menu-items {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .topbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .menu-items {
+      float: none;
+    }
+  }
+  
+
+/* menu options*/
+
+#logo {
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-right: 10px;
+    float: left;
+    font-size: 2.3em;
+    color: #003478;
+    font-family: merriweather,serif;
+  }
+  
+  #logo:hover {
+    text-decoration: underline;
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  #content-wrap {
+    padding-bottom: 3.5rem;    /* Footer height */
+  }
+  /* footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;            /* Footer height */
+    border-top: 1px solid #eaeaea;
+    color: #777;
+  }
+  
+  footer a {
+    color: #555;
+  }
+  
+  footer a:hover {
+    color: #222;
+  }
+  
+  footer small {
+    float: left;
+  }
+  
+  footer ul {
+    float: right;
+    list-style: none;
+  }
+  
+  footer ul li {
+    float: left;
+    margin-left: 15px;
+  }
+
+  
