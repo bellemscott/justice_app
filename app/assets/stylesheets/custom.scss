@@ -1,3 +1,4 @@
+@import 'bootstrap/dist/css/bootstrap';
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -60,18 +61,30 @@ h1, h2, h3, h4, h5, h6 {
 } 
 #menuitem{
     font-size: 1.1em;
-    margin-right: -8px;
     font-weight:bold;
     color: #003478;
     font-family: merriweather,serif;
 }
+
+  .navbar {
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+    }
+  .btn{
+      background-color: #003478 !important;
+      border-color: #003478 !important;
+  }
 #menuitem:hover{
     text-decoration: underline;
 }
 
 .homeimage{
-    width:100%
+    width:100%;
 }
+.schedule{
+    margin-top: 40px;
+}
+
 .hometext{
     color: black;
 }
@@ -90,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .brandeislogo{
-    float: left;
+    margin-left: 50px;
 }
 .topbar a {
     float: left;
@@ -122,17 +135,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* menu options*/
 
-#logo {
-    text-align: center;
-    justify-content: center;
-    margin-left: 10px;
-    padding-right: 10px;
+
+  #logo {
     float: left;
-    font-size: 2.3em;
+    margin-right: 10px;
+    font-size: 2.1em;
     color: #003478;
-    font-family: merriweather,serif;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
   }
-  
   #logo:hover {
     text-decoration: underline;
   }

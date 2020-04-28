@@ -1,16 +1,19 @@
-<header class="navbar navbar-fixed-top navbar-inverse navbar-custom">
+<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to image_tag("brandeisseal.png", height: '50'), '#', id: "logo" %>
-    <%= link_to "Brandeis Foster Student Mentorship Program", '#', id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", '#' , id:"menuitem"%></li>
-        <li><%= link_to "Classes",  '#', id: "menuitem" %></li>
-        <li><%= link_to "Schedule", '#', id: "menuitem" %></li>
-        <li><%= link_to "Progress", '#', id: "menuitem" %></li>
-        <li><%= link_to "Live Chat", '#', id: "menuitem" %></li>
-      </ul>
-      </nav>
+    <%= link_to image_tag("brandeisseal.png", height: '50'), id: "brandeislogo"%>
+    <%= link_to "Brandeis Foster Student Mentorship Program", root_path, id: "logo"%>
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/" class="menuitem">Home</a>
+            <a class="dropdown-item" href="/classes">Classes</a>
+            <a class="dropdown-item" href="/schedule">Schedule</a>
+            <a class="dropdown-item" href="/livechat">Live Chat</a>
+            <a class="dropdown-item" href="/login">Log In</a>
+            <a class="dropdown-item" href="/submitwork">Submit Work</a>
+        </div>
       </div>
   </div>
 </header>
